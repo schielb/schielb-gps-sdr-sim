@@ -44,3 +44,9 @@ nbproject/*
 
 # Last used USER_MOTION_SIZE variable
 .user-motion-size
+
+# Leave a blank brdc_data folder
+brdc_data
+
+# Host-based testing
+test.sh

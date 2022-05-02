@@ -301,7 +301,7 @@ fi
 echo ""
 
 # Generate .bin file from brdc data
-../gps-sdr-sim -e brdc_data/$file_name -l "$lat","$lon",100
+osqzss-gps-sdr-sim/gps-sdr-sim -e brdc_data/$file_name -l "$lat","$lon",100
 
 if [ "$?" -eq 0 ]
 then
@@ -343,7 +343,7 @@ case "$radio" in
         fi
         ;;
     usrp)
-        ../gps-sdr-sim-uhd.py -t gpssim.bin -s 2500000 -x 0
+        osqzss-gps-sdr-sim/gps-sdr-sim-uhd.py -t gpssim.bin -s 2500000 -x 0
         if [ "$?" -eq 0 ]
         then
             echo "usrp transfer complete"

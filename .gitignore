@@ -50,3 +50,6 @@ brdc_data
 
 # Host-based testing
 test.sh
+
+# Keep login credentials secret
+#*.netrc

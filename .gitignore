@@ -52,4 +52,4 @@ brdc_data
 test.sh
 
 # Keep login credentials secret
-#*.netrc
+*.netrc

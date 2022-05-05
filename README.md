@@ -4,7 +4,7 @@ Credit where it's due, all work in the osqzss-gps-sdr-sim folder is located at h
 This is just a repository that subtree's osqsss's work and adds scripting to it.
 
 ## MAJOR SECURITY REQUIREMENT!!! READ THIS BEFORE COMMITTING/PUSHING ANYTHING!
-In order to access the information on NASA's website, an account will need to be made. If you don't have an account, you can start the process very easily by clicking [here](https://cddis.nasa.gov/archive/gnss/data/daily/).
+In order to access the information on NASA's website, an account will need to be made. If you don't have an account, you can start the process very easily by clicking [here](https://cddis.nasa.gov/archive/gnss/data/daily/). If you want to just use the lab's credentials, they are located on Notion.
 
 Once you have a login and password, you need to create a new file in the main repository; this should be called '.netrc'. Copy the following line into it:
 
@@ -14,8 +14,15 @@ And then replace \<login> and \<password> with your credentials. Once you have m
 
 I'd highly recommend making a randomly-generated password and storing that in this .netrc file. Security on this password cannot be guaranteed (someone could always delete the line in the .gitignore file and hope you pull/push without realizing). The bad that can be done with this password is very limited (all data is publicly available, the government just keeps track of who is accessing what), but that doesn't mean that it's nothing.
 
+## BUILDING
+
+You need to build the osqzss code. To do that, simply run the following from the main folder:
+```
+$ gcc osqzss-gps-sdr-sim/gpssim.c -lm -O3 -o osqzss-gps-sdr-sim/gps-sdr-sim
+```
+
 ## USAGE
-Once you have created and filled in your .netrc file, you are ready to run the program. Here is the help dialog:
+Once you have created and filled in your .netrc file and built the osqzss code, you are ready to run the program. Here is the help dialog:
 ```
 Usage: genAndRun [options]
 Options:

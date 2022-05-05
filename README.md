@@ -4,7 +4,7 @@ Credit where it's due, all work in the osqzss-gps-sdr-sim folder is located at h
 This is just a repository that subtree's osqsss's work and adds scripting to it.
 
 ## MAJOR SECURITY REQUIREMENT!!! READ THIS BEFORE COMMITTING/PUSHING ANYTHING!
-In order to access the information on NASA's website, an account will need to be made. If you don't have an account, you can start the process very easily by clicking [here](https://cddis.nasa.gov/archive/gnss/data/daily/). If you want to just use the lab's credentials, they are located on Notion.
+In order to access the information on NASA's website, an account will need to be made. If you don't have an account, you can start the process very easily by clicking [here](https://cddis.nasa.gov/archive/gnss/data/daily/).
 
 Once you have a login and password, you need to create a new file in the main repository; this should be called '.netrc'. Copy the following line into it:
 

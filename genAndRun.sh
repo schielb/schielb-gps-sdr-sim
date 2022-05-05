@@ -301,7 +301,7 @@ fi
 echo ""
 
 # Generate .bin file from brdc data
-osqzss-gps-sdr-sim/gps-sdr-sim -e brdc_data/$file_name -l "$lat","$lon",100
+osqzss-gps-sdr-sim/gps-sdr-sim -e brdc_data/$file_name -l "$lat","$lon",100 -b 8
 
 if [ "$?" -eq 0 ]
 then

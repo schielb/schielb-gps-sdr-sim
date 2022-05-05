@@ -47,3 +47,9 @@ Options:
 ```
 
 This program can run both the generation of the sdr radio data and the application of the actual sdr. A look behind the scenes and all the different commands (if you would like to modify the script) can be found in the README in the osqzss-gpr-sdr-sim folder.
+
+## Hardware
+
+Something like a smartphone might be too smart to get fooled by a spoofed GPS signal, so I had to get some dumber hardware.
+
+Specifically I looked for a simple USB GPS antenna, a good and inexpensive one being [the VK-162 G-Mouse here on Amazon](https://www.amazon.com/VK-162-G-Mouse-External-Navigation-Raspberry/dp/B01EROIUEW). This will just plug into a computer and start uploading NMEA messages based on any GPS transmissions it receives. While these can simply be read on a terminal using something like ```sudo cat /dev/<usb port>```, I used an open source python GPS gui, found at https://github.com/semuconsulting/PyGPSClient The instructions for installing and using this repository are on its readme. If you are using Windows, you can just use the u-center app [here](https://www.u-blox.com/en/product/u-center). Each of these should be able to automatically detect the G-mouse module, and you can start reading its NMEA messages and get a visual image of where you "are" in the world.

@@ -48,7 +48,7 @@ Options:
 
 This program can run both the generation of the sdr radio data and the application of the actual sdr. A look behind the scenes and all the different commands (if you would like to modify the script) can be found in the README in the osqzss-gpr-sdr-sim folder.
 
-## Hardware
+## HARDWARE
 
 Something like a smartphone might be too smart to get fooled by a spoofed GPS signal, so I had to get some dumber hardware.
 
